@@ -1,62 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./img/programming.png" type="image/x-icon">
-  <!--Link CSS-->
-  <link rel="stylesheet" href="./css/index.css">
-  <!--LINK FONTAWESOME-->
-  <script src="https://kit.fontawesome.com/2b71dc467a.js" crossorigin="anonymous"></script>
-  <title>Portafolio Web | Chars</title>
-</head>
-<body>
-  <header class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--IMG--LOGO-->
+    <link
+      rel="shortcut icon"
+      href="./img/programming.png"
+      type="image/x-icon"
+    />
+    <!--Link CSS-->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!--LINK FONTAWESOME-->
+    <script
+      src="https://kit.fontawesome.com/2b71dc467a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portafolio Web | Chars</title>
+  </head>
+  <body>
+    <header class="header">
       <div class="navbar">
         <span class="nameLogo"><code><</code>Chars<code>/></code></span>
         <ul class="navbar__links">
-          <li class="navbar__link"><a class="link" href="./index.html">Home</a></li>
-          <li class="navbar__link"><a class="link" href="#">About</a></li>
-          <li class="navbar__link"><a class="link" href="#">Contact</a></li>
+          <li class="navbar__link">
+            <a class="link" href="./index.html">Home</a>
+          </li>
+          <li class="navbar__link"><a class="link" href="#about">About</a></li>
+          <li class="navbar__link"><a class="link" href="#projects">Projects</a></li>
+          <li class="navbar__link"><a class="link" href="#contact">Contact</a></li>
         </ul>
       </div>
       <div class="container__card">
         <div class="img__card"></div>
         <div class="card__text">
-          <h1>Carlos Sánchez</h1>
+          <h1 class="card__name">Carlos Sánchez</h1>
           <span>Web Developer</span>
-          <div class="networks">
-            <a href="https://www.facebook.com/profile.php?id=100077881878261"><i class="network fa-brands fa-square-facebook fa-lg"></i></a>
-            <a href="https://twitter.com/charsdvp"><i class="network fa-brands fa-twitter fa-lg"></i></a>
-            <a href="https://www.instagram.com/carlos_sancheze.d.e/"><i class="network fa-brands fa-instagram fa-lg"></i></a>
+          <div class="container__networks">
+            <a
+              class="network"
+              href="https://www.facebook.com/profile.php?id=100077881878261"
+              ><i class="fa-brands fa-square-facebook fa-lg"></i
+            ></a>
+            <a class="network" href="https://twitter.com/charsdvp"
+              ><i class="fa-brands fa-twitter fa-lg"></i
+            ></a>
+            <a
+              class="network"
+              href="https://www.instagram.com/carlos_sancheze.d.e/"
+              ><i class="fa-brands fa-instagram fa-lg"></i
+            ></a>
           </div>
         </div>
       </div>
-  </header>
-  <main class="main">
-    <div class="container__about">
-      <h2>About me</h2>
-      <div class="container__description">
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis incidunt ex tempora eveniet placeat temporibus id, ad, sequi quibusdam, quisquam ipsam. Labore accusamus facilis reiciendis ducimus molestiae animi perferendis dignissimos?</p>
+    </header>
+    <main class="main">
+      <div id="about"class="container__about">
+        <div class="aboutMe">
+          <h2 class="title__about">About Me</h2>
+          <p class="description__about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+            reiciendis quam ex quos tenetur deleniti aut nihil obcaecati cum
+            accusamus ipsum adipisci.
+          </p>
+        </div>
+        <div class="container__data">
+          <div class="container__data__profile">
+            <h3 class="title__data">Personal Details</h3>
+            <div class="container__details">
+              <ul>
+                <li class="details--blue">Birthdate</li>
+                <li class="details--blue">Phone</li>
+                <li class="details--blue">Email</li>
+                <li class="details--blue">Address</li>
+                <li class="details--blue">Job Status</li>
+              </ul>
+              <ul>
+                <li class="details">10-12-2000</li>
+                <li class="details">+52 722-123-122</li>
+                <li class="details">carlossanchezdvp@gmail.com</li>
+                <li class="details">Toluca, Edo México.</li>
+                <li class="details details--free">Freelancer</li>
+              </ul>
+            </div>
+          </div>
+          <div class="container__data__interests">
+            <h3 class="title__data">My Interests</h3>
+            <div class="container__interest">
+              <div class="interest__block">
+                <i class="fa-solid fa-laptop-code fa-lg"></i>
+                <span class="text__block">Programming</span>
+              </div>
+              <div class="interest__block">
+                <i class="fa-brands fa-napster fa-lg"></i>
+                <span class="text__block">Music</span>
+              </div>
+              <div class="interest__block">
+                <i class="fa-solid fa-person-walking-luggage fa-lg"></i>
+                <span class="text__block">Travel</span>
+              </div>
+              <div class="interest__block">
+                <i class="fa-solid fa-chess-knight fa-lg"></i>
+                <span class="text__block">Chess</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="container__information">
-        <div class="information__profile">
-          <h3>Personal Details</h3>
+      <div id="projects"class="container__projects">
+        <h2>Projects</h2>
+      </div>
+      <!--C O N T A C-->
+      <div id="contact"class="container__contact">
+        <h2>Contact</h2>
+        <div class="container__form">
+          <form action="#">
+            <ul class="container__label">
+              <li><label for="name">Name :</label></li>
+              <li><input type="text" placeholder="Name"></li>
+              <li><label for="name">Email :</label></li>
+              <li><input type="text" placeholder="Email"></li>
+              <li><label for="name">Message :</label></li>            
+              <li><textarea placeholder="Message"></textarea></li>
+              <div><input type="submit" value="Send"></div>
+            </ul>
+            <img class="svg" src="./img/undraw_forms_re_pkrt.svg" alt="">
+          </form>
         </div>
-        <div class="container__interest">
-
-        </div>
+      </div>
+    </main> 
+    <div class="footer">
+      <div class="footer__text">
+        <small>&COPY; Carlos Sánchez</small>
       </div>
     </div>
-  </main>
-  <div class="footer">
-    <div class="footer__text">
-      <small>&COPY; Carlos Sánchez</small>
-    </div>
-  </div>
-  <script>
-    alert("Esta pagina aun se encuentra en desarrollo");
-  </script>
-</body>
+    <script>
+      //alert("Esta pagina aun se encuentra en desarrollo");
+    </script>
+  </body>
 </html>
